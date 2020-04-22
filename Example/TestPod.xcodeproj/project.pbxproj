@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4B9332B09F343D490800D0AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4B9332B09F343D490800D0AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		558EC5B74F6089E39C46583C /* Pods_TestPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TestPod_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPod_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,12 +40,12 @@
 		607FACE51AFB9204008FA782 /* TestPod_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPod_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		783E8FB5E477C3D7148666B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		783E8FB5E477C3D7148666B8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7E173E3F872167782BD010CF /* Pods-TestPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Example.debug.xcconfig"; path = "Target Support Files/Pods-TestPod_Example/Pods-TestPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7EF60EEC9BD4A0E187F1FABC /* Pods-TestPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Tests.release.xcconfig"; path = "Target Support Files/Pods-TestPod_Tests/Pods-TestPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A02AB4EF0B5AD0B878831797 /* Pods-TestPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestPod_Tests/Pods-TestPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A52691E3E929FD6DDF69D8AC /* Pods_TestPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41DD914FC0AB7CA3F153981 /* TestPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestPod.podspec; path = ../TestPod.podspec; sourceTree = "<group>"; };
+		E41DD914FC0AB7CA3F153981 /* TestPod.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestPod.podspec; path = ../TestPod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F8A777CE24BE891A3C1F0AE7 /* Pods-TestPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPod_Example.release.xcconfig"; path = "Target Support Files/Pods-TestPod_Example/Pods-TestPod_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +77,6 @@
 				A02AB4EF0B5AD0B878831797 /* Pods-TestPod_Tests.debug.xcconfig */,
 				7EF60EEC9BD4A0E187F1FABC /* Pods-TestPod_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = DU7RQJED2A;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,10 +479,11 @@
 			baseConfigurationReference = 7E173E3F872167782BD010CF /* Pods-TestPod_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DU7RQJED2A;
 				INFOPLIST_FILE = TestPod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "bolgov.demo.TestPod-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -493,10 +495,11 @@
 			baseConfigurationReference = F8A777CE24BE891A3C1F0AE7 /* Pods-TestPod_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DU7RQJED2A;
 				INFOPLIST_FILE = TestPod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "bolgov.demo.TestPod-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;

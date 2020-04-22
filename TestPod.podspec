@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TestPod'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TestPod.'
+  s.summary          = 'scnsdjncjsdncjksdnckjsdncksdncksdncsdkjndscjsdbcsjhdbcsdcsdjchbsdjhbchsdbchsdbcisdc sndjkcnsjdcns'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,6 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+TODO: Add long description of the pod here. TODO: Add long description of the pod here. TODO: Add long description of the pod here. TODO: Add long description of the pod here.
+TODO: Add long description of the pod here. TODO: Add long description of the pod here. TODO: Add long description of the pod here.
 TODO: Add long description of the pod here.
                        DESC
 
@@ -28,10 +30,10 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/bolgov-pwr/TestPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'TestPod/Classes/**/*'
-  
+  s.swift_version = '5.0'
   # s.resource_bundles = {
   #   'TestPod' => ['TestPod/Assets/*.png']
   # }
